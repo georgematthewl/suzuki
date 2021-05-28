@@ -1,0 +1,22 @@
+@import "styles/var";
+
+.tab-body {
+  position: relative;
+  height: 100%;
+
+  .tab-header {
+    overflow: scroll;
+    background-color: $primary;
+    &-list {
+      color: rgba(255, 255, 255, 0.5);
+      box-sizing: content-box;
+      h5 {
+        min-width: 100px;
+      }
+      &-active {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+      }
+    }
+  }
+}

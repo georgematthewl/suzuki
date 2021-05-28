@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 9px 16px;
+  top: 0;
+  transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 250ms;
+
+  .logo {
+    margin-right: 14px;
+    width: 30px;
+  }
+
+  &.hide {
+    transform: translateX(-304px);
+  }
+}

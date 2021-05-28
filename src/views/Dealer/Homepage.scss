@@ -1,0 +1,31 @@
+.main-section {
+  padding-top: 32px;
+  padding-bottom: 100px;
+}
+
+.first-card {
+  margin-top: -84px;
+}
+
+.card-picture {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.footer {
+  .full-width {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  &--menu {
+    text-align: center;
+    padding-top: 36px;
+
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      padding: 4px 10px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.footer {
+  .full-width {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  &--menu {
+    text-align: center;
+    padding-top: 36px;
+
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      padding: 4px 10px;
+    }
+  }
+}

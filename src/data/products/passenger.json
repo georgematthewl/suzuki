@@ -1,0 +1,22 @@
+[
+  {
+    "name": "XL 7",
+    "price": "Rp232.000.000",
+    "imageName": "xl7"
+  },
+  {
+    "name": "All New Ertiga",
+    "price": "Rp207.000.000",
+    "imageName": "ertiga"
+  },
+  {
+    "name": "All New Ertiga Suzuki Sport",
+    "price": "Rp252.000.000",
+    "imageName": "ertiga-sport"
+  },
+  {
+    "name": "New Ignis",
+    "price": "Rp171.000.000",
+    "imageName": "ignis"
+  }
+]

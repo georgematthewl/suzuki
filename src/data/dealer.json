@@ -1,0 +1,58 @@
+[
+  {
+    "name": "SUZUKI NJS SOEKARNO - HATTA",
+    "phone": "(022) 6204645",
+    "address": "Jl. Soekarno Hatta No. 289 Bandung 40234",
+    "imageName": "soekarno",
+    "tag": "Sales, Service, Sparepart, Body & Paint"
+  },
+  {
+    "name": "SUZUKI NJS CIBEUREUM",
+    "phone": "(022) 6204645",
+    "address": "Jl. Raya Cibeureum 48 B Bandung",
+    "imageName": "cibeureum",
+    "tag": "Sales, Service, Sparepart"
+  },
+  {
+    "name": "SUZUKI NJS BUAH BATU",
+    "phone": "(022) 7300723",
+    "address": "Jl. Soekarno – Hatta No. 513 Bandung",
+    "imageName": "buah-batu",
+    "tag": "Sales, Service, Sparepart"
+  },
+  {
+    "name": "SUZUKI NJS AHMAD YANI",
+    "phone": "(022) 7101655",
+    "address": "Jl. Jenderal Ahmad Yani 259 Bandung",
+    "imageName": "ahmad-yani",
+    "tag": "Sales, Service, Sparepart"
+  },
+  {
+    "name": "SUZUKI NJS KOPO",
+    "phone": "(022) 5422259",
+    "address": "Jl. Kopo (Sayati) 260 C Bandung",
+    "imageName": "kopo",
+    "tag": "Sales"
+  },
+  {
+    "name": "SUZUKI NJS DAGO",
+    "phone": "(022) 6002512",
+    "address": "Jl. IR.H. Juanda (Dago) No. 75 Bandung",
+    "imageName": "dago",
+    "tag": "Sales"
+  },
+  {
+    "name": "SUZUKI NJS SETIABUDHI",
+    "phone": "(022) 2030787",
+    "address": "Jl. DR. Setiabudhi No. 78 Bandung",
+    "imageName": "setiabudi",
+    "tag": "Sales, Service, Sparepart"
+  },
+  {
+    "name": "SUZUKI NJS RANCAEKEK",
+    "phone": "(022) 87836800",
+    "address": "Jl. Raya Rancaekek Cipasir KM. 22 Rancaekek",
+    "imageName": "rancaekek",
+    "tag": "Sales, Service, Sparepart"
+  }
+]

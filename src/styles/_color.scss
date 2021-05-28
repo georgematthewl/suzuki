@@ -1,0 +1,29 @@
+@import "./var";
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-grey {
+  background-color: $grey;
+}
+
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+.primary {
+  color: $primary;
+}
+
+.primary--lighter {
+  color: $primary-lighter;
+}

@@ -1,0 +1,13 @@
+.floating {
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+
+  &--wrapper {
+    width: calc(100% - 2rem);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+  }
+}
