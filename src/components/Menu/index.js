@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import HamburgerMenu from "react-hamburger-menu";
 
 import Backdrop from "components/Backdrop";
@@ -9,7 +10,13 @@ import Divider from "components/Divider";
 import "./Menu.scss";
 
 const Menu = ({ handleMenu }) => {
+  const { pathname } = useLocation();
+
   const [isOpen, toggleOpen] = useState(false);
+
+  useEffect(() => {
+    closeMenu();
+  }, [pathname]);
 
   const listNavigation = [
     "Beranda",
@@ -20,9 +27,14 @@ const Menu = ({ handleMenu }) => {
     "Hubungi Kami",
   ];
 
+  function closeMenu() {
+    toggleOpen(false);
+    handleMenu(false);
+  }
+
   function renderNavigationList() {
     return listNavigation.map((menu, index) => (
-      <Link key={index} className="mb--1 d--block black" to="/">
+      <Link key={index} className="mb--1 d--block black" onClick={closeMenu} to="/">
         {menu}
       </Link>
     ));
