@@ -20,9 +20,10 @@ const Tab = ({ modifier, children }) => {
         child.props.tabid === activeTab ? "tab-header-list-active" : ""
       } width--100 text-center p--0-5`}
     >
-      <h5 className="text-size--16">{child.props.label}</h5>
+      <h5 className="text-size--16 mb--0">{child.props.label}</h5>
     </div>
   ));
+
   const tabContent = children.filter(
     (child) => child.props.tabid === activeTab
   );

@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { useHistory } from "react-router-dom";
 
 import Container from "components/Container";
 import Divider from "components/Divider";
@@ -6,11 +7,10 @@ import Button from "components/Button";
 import Footer from "components/Footer";
 import Carousell from "components/Carousell";
 import Tab from "components/Tab";
+import FloatingItem from "components/FloatingItem";
 
 import listPassengerCar from "data/products/passenger.json";
 import listCommercialCar from "data/products/commercial.json";
-
-import "./Landing.scss";
 
 const images = [
   { url: "banner/banner-1.png" },
@@ -19,11 +19,16 @@ const images = [
   { url: "banner/banner-1.png" },
 ];
 
-const Landing = () => {
+const Outlet = () => {
+  const history = useHistory();
+
   function renderListPassenger() {
     return listPassengerCar.map((car, index) => (
       <Fragment key={index}>
-        <div className="d--flex a-items-center">
+        <div
+          className="d--flex a-items-center"
+          onClick={() => history.push("/product/detail")}
+        >
           <div className="width--50 mr--1 d--flex a-items--center">
             <img
               src={
@@ -54,7 +59,10 @@ const Landing = () => {
   function renderListCommercial() {
     return listCommercialCar.map((car, index) => (
       <Fragment key={index}>
-        <div className="d--flex a-items-center">
+        <div
+          className="d--flex a-items-center"
+          onClick={() => history.push("/product/detail")}
+        >
           <div className="width--50 mr--1 d--flex a-items--center">
             <img
               src={
@@ -84,35 +92,33 @@ const Landing = () => {
 
   function renderFloatingItem() {
     return (
-      <section className="d--flex j-content--center floating width--100">
-        <div className="d--flex a-items--center j-content--center floating--wrapper p--0-5">
-          <div className="d--flex f-direction--column a-items--center j-content--center width--25">
-            <img src={require("assets/icon/wa.svg").default} alt="WA Icon" />
-            <p className="text-size--10 mt--0-25 mb--0">WhatsApp</p>
-          </div>
-          <div className="d--flex f-direction--column a-items--center j-content--center width--25">
-            <img
-              src={require("assets/icon/pricelist.svg").default}
-              alt="Price Icon"
-            />
-            <p className="text-size--10 mt--0-25 mb--0">Daftar Harga</p>
-          </div>
-          <div className="d--flex f-direction--column a-items--center j-content--center width--25">
-            <img
-              src={require("assets/icon/book-service.svg").default}
-              alt="Book Service Icon"
-            />
-            <p className="text-size--10 mt--0-25 mb--0">Pesan Servis</p>
-          </div>
-          <div className="d--flex f-direction--column a-items--center j-content--center width--25">
-            <img
-              src={require("assets/icon/credit-simulation.svg").default}
-              alt="Credit Simulation Icon"
-            />
-            <p className="text-size--10 mt--0-25 mb--0">Simulasi Kredit</p>
-          </div>
+      <FloatingItem>
+        <div className="d--flex f-direction--column a-items--center j-content--center width--25">
+          <img src={require("assets/icon/wa.svg").default} alt="WA Icon" />
+          <p className="text-size--10 mt--0-25 mb--0">WhatsApp</p>
         </div>
-      </section>
+        <div className="d--flex f-direction--column a-items--center j-content--center width--25">
+          <img
+            src={require("assets/icon/pricelist.svg").default}
+            alt="Price Icon"
+          />
+          <p className="text-size--10 mt--0-25 mb--0">Daftar Harga</p>
+        </div>
+        <div className="d--flex f-direction--column a-items--center j-content--center width--25">
+          <img
+            src={require("assets/icon/book-service.svg").default}
+            alt="Book Service Icon"
+          />
+          <p className="text-size--10 mt--0-25 mb--0">Pesan Servis</p>
+        </div>
+        <div className="d--flex f-direction--column a-items--center j-content--center width--25">
+          <img
+            src={require("assets/icon/credit-simulation.svg").default}
+            alt="Credit Simulation Icon"
+          />
+          <p className="text-size--10 mt--0-25 mb--0">Simulasi Kredit</p>
+        </div>
+      </FloatingItem>
     );
   }
 
@@ -155,4 +161,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Outlet;

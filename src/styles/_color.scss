@@ -8,6 +8,14 @@
   background-color: $primary;
 }
 
+.bg-primary--lighter {
+  background-color: $primary-lighter;
+}
+
+.bg-primary--lightest {
+  background-color: $primary-lightest;
+}
+
 .bg-grey {
   background-color: $grey;
 }
@@ -26,4 +34,29 @@
 
 .primary--lighter {
   color: $primary-lighter;
+}
+
+// Car Color
+.bg-car--orange {
+  background-color: $orange;
+}
+
+.bg-car--burgundy {
+  background-color: $burgundy;
+}
+
+.bg-car--white {
+  background-color: $white;
+}
+
+.bg-car--metalic {
+  background-color: $metallic;
+}
+
+.bg-car--black {
+  background-color: $black;
+}
+
+.bg-car--khaki {
+  background-color: $khaki;
 }

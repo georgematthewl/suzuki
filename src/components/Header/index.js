@@ -1,12 +1,31 @@
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import Logo from "assets/logo.png";
 import "./Header.scss";
 
 const Header = ({ isMenuOpen }) => {
+  const { pathname } = useLocation();
+  const [isNoShadow, setIsNoShadow] = useState(true);
+
+  useEffect(() => {
+    removeBoxShadow();
+  }, [pathname]);
+
+  function removeBoxShadow() {
+    if (!pathname.split("/")[1]) {
+      setIsNoShadow(false);
+    } else {
+      setIsNoShadow(true);
+    }
+  }
+
   return (
     <header
-      className={`header d--flex a-items--center ${isMenuOpen ? "hide" : ""}`}
+      className={`header d--flex a-items--center ${isMenuOpen ? "hide" : ""} ${
+        isNoShadow ? "no-box-shadow" : ""
+      }`}
     >
       <img className="logo" src={Logo} alt="Suzuki Logo" />
       <div>

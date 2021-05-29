@@ -76,3 +76,19 @@ button.disabled {
     color: white;
   }
 }
+
+button.reverse {
+  color: white;
+  border: 2px solid white;
+
+  &:hover {
+    background-color: white;
+    color: $primary;
+  }
+}
+
+button.tertiary {
+  background-color: white;
+  color: $primary;
+  min-width: unset;
+}

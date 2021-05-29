@@ -10,6 +10,7 @@ const Button = ({
   disabled,
   secondary,
   tertiary,
+  reverse,
   small,
   children,
 }) => {
@@ -19,6 +20,7 @@ const Button = ({
         secondary,
         tertiary,
         small,
+        reverse,
         disabled,
       })}`}
       disabled={disabled}

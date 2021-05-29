@@ -10,9 +10,9 @@ import Footer from "components/Footer";
 import listDealers from "data/dealer.json";
 import listInfo from "data/info.json";
 
-import "./Homepage.scss";
+import "./Landing.scss";
 
-const Homepage = () => {
+const Landing = () => {
   const history = useHistory();
 
   function renderDealerCard() {
@@ -105,4 +105,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Landing;

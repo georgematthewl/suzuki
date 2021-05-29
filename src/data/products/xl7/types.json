@@ -1,0 +1,68 @@
+{
+  "alpha": [
+    {
+      "color": "Rising Orange + Black",
+      "imageName": "xl7",
+      "class": "bg-car--orange"
+    },
+    {
+      "color": "Brave Khaki + Black",
+      "imageName": "xl7-khaki",
+      "class": "bg-car--khaki"
+    },
+    {
+      "color": "Prime Cool Black",
+      "imageName": "xl7-black",
+      "class": "bg-car--black"
+    },
+    {
+      "color": "Prime Snow White",
+      "imageName": "xl7-white",
+      "class": "bg-car--white"
+    }
+  ],
+  "beta": [
+    {
+      "color": "Pearl Burgundy Red",
+      "imageName": "xl7-burgundy",
+      "class": "bg-car--burgundy"
+    },
+    {
+      "color": "Metallic Magma Grey",
+      "imageName": "xl7-metallic",
+      "class": "bg-car--metallic"
+    },
+    {
+      "color": "Pearl Snow White",
+      "imageName": "xl7-white-pearl",
+      "class": "bg-car--white"
+    },
+    {
+      "color": "Prime Cool Black",
+      "imageName": "xl7-black",
+      "class": "bg-car--black"
+    }
+  ],
+  "zeta": [
+    {
+      "color": "Pearl Snow White",
+      "imageName": "xl7-white-pearl",
+      "class": "bg-car--white"
+    },
+    {
+      "color": "Prime Cool Black",
+      "imageName": "xl7-black",
+      "class": "bg-car--black"
+    },
+    {
+      "color": "Metallic Magma Grey",
+      "imageName": "xl7-metallic",
+      "class": "bg-car--metallic"
+    },
+    {
+      "color": "Pearl Burgundy Red",
+      "imageName": "xl7-burgundy",
+      "class": "bg-car--burgundy"
+    }
+  ]
+}

@@ -2,8 +2,8 @@ import React from "react";
 
 import "./Divider.scss";
 
-const Divider = () => {
-  return <div className="divider" />;
+const Divider = ({ className = "" }) => {
+  return <div className={`divider ${className}`} />;
 };
 
 export default Divider;

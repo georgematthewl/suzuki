@@ -89,6 +89,9 @@
 .pt--1 {
   padding-top: 1rem;
 }
+.pt--1-5 {
+  padding-top: 1.5rem;
+}
 .pt--2 {
   padding-top: 2rem;
 }
@@ -257,6 +260,9 @@
 .width--100 {
   width: 100%;
 }
+.width--auto {
+  width: auto;
+}
 
 .flex--wrap {
   flex-wrap: wrap;
@@ -264,4 +270,8 @@
 
 .bottom--0 {
   bottom: 0;
+}
+
+.top--0 {
+  top: 0;
 }

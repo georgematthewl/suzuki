@@ -16,4 +16,8 @@
   &.hide {
     transform: translateX(-304px);
   }
+
+  &.no-box-shadow {
+    box-shadow: unset;
+  }
 }

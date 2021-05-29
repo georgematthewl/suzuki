@@ -2,4 +2,13 @@
   margin: 20px 0;
   background-color: #eeeaea;
   height: 1px;
+
+  &.lighter {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &.transparent {
+    background-color: transparent;
+    margin: 10px 0;
+  }
 }
