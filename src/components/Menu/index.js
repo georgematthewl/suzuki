@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import HamburgerMenu from "react-hamburger-menu";
 
-import Backdrop from "components/Backdrop";
-import Button from "components/Button";
-import Divider from "components/Divider";
+import Backdrop from "components/UI/Backdrop";
+import Button from "components/UI/Button";
+import Divider from "components/UI/Divider";
 
 import "./Menu.scss";
 

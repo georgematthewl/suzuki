@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
+import TextField from "@material-ui/core/TextField";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import Select from "@material-ui/core/Select";
+
+import Accordion from "components/UI/Accordion";
+import Button from "components/UI/Button";
+import Tab from "components/UI/Tab";
+import Carousell from "components/UI/Carousell";
+import Divider from "components/UI/Divider";
+import Modal from "components/UI/Modal";
+
 import Container from "components/Container";
-import Button from "components/Button";
-import Carousell from "components/Carousell";
-import Divider from "components/Divider";
 import Footer from "components/Footer";
-import Accordion from "components/Accordion";
 import FloatingItem from "components/FloatingItem";
-import Tab from "components/Tab";
 
 import pricelist from "data/products/pricelist.json";
 import types from "data/products/xl7/types.json";
@@ -24,6 +31,7 @@ const images = [
 
 const ProductDetail = () => {
   const [activeTab, setActiveTab] = useState("overview");
+  const [showModal, toggleModal] = useState(false);
   const [alphaSelectedColor, setAlphaSelectedColor] = useState(
     "Rising Orange + Black"
   );
@@ -193,7 +201,7 @@ const ProductDetail = () => {
     return (
       <FloatingItem>
         <div className="d--flex f-direction--column a-items--center j-content--center width--50 pl--0-5">
-          <Button>
+          <Button onClick={() => toggleModal(true)}>
             <span>Booking Mobil</span>
           </Button>
         </div>
@@ -222,6 +230,85 @@ const ProductDetail = () => {
         <span className="text-bold">{car.price}</span>
       </div>
     ));
+  }
+
+  function renderModal() {
+    return (
+      <Modal show={showModal} onClick={() => toggleModal(false)}>
+        <img
+          className="close-icon"
+          onClick={() => toggleModal(false)}
+          src={require("assets/icon/close.svg").default}
+          alt="Close Icon"
+        />
+        <h3 className="mb--0 text-center">Booking Mobil</h3>
+        <div className="mt--1-5">
+          <div className="mb--1">
+            <TextField
+              style={{ color: "#163c80" }}
+              fullWidth
+              label="Nama Lengkap"
+            />
+          </div>
+          <div className="mb--1">
+            <TextField fullWidth label="Email" />
+          </div>
+          <div className="mb--1">
+            <TextField fullWidth type="tel" label="No. Handphone" />
+          </div>
+          <div className="d--flex pt--0-5">
+            <div className="width--50 mr--1">
+              <InputLabel style={{ transform: "scale(0.75)" }} id="car">
+                Mobil
+              </InputLabel>
+              <Select
+                fullWidth
+                labelId="car"
+                id="car"
+                value="XL7"
+                onChange={() => {}}
+              >
+                <MenuItem value="XL7">XL7</MenuItem>
+                <MenuItem value="Ertiga">Ertiga</MenuItem>
+                <MenuItem value="Ertiga Sport">All New Ertiga Sport</MenuItem>
+                <MenuItem value="Ignis">Ignis</MenuItem>
+              </Select>
+            </div>
+            <div className="width--50">
+              <InputLabel style={{ transform: "scale(0.75)" }} id="type">
+                Tipe
+              </InputLabel>
+              <Select
+                fullWidth
+                labelId="type"
+                id="type"
+                value="ALPHA A/T"
+                onChange={() => {}}
+              >
+                <MenuItem value="ZETA M/T">ZETA M/T</MenuItem>
+                <MenuItem value="ZETA A/T">ZETA A/T</MenuItem>
+                <MenuItem value="BETA M/T">BETA M/T</MenuItem>
+                <MenuItem value="BETA A/T">BETA A/T</MenuItem>
+                <MenuItem value="ALPHA M/T">ALPHA M/T</MenuItem>
+                <MenuItem value="ALPHA A/T">ALPHA A/T</MenuItem>
+              </Select>
+            </div>
+          </div>
+          <div className="d--flex mt--1-5">
+            <Button
+              secondary
+              className="mr--1 no-border"
+              onClick={() => toggleModal(false)}
+            >
+              <span>Batal</span>
+            </Button>
+            <Button>
+              <span>KIRIM</span>
+            </Button>
+          </div>
+        </div>
+      </Modal>
+    );
   }
 
   return (
@@ -529,6 +616,7 @@ const ProductDetail = () => {
       </div>
       <Footer paddingBottom={88} />
       {renderFloatingItem()}
+      {renderModal()}
     </Container>
   );
 };

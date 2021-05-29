@@ -71,6 +71,21 @@
   }
 }
 
+.close-icon {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.MuiFormLabel-root {
+  color: $primary;
+  font-weight: 600;
+}
+
+.no-border {
+  border-color: transparent !important;
+}
+
 .sticky-nav {
   position: sticky;
   top: 54px;

@@ -1,10 +1,11 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
+import Card from "components/UI/Card";
+import Label from "components/UI/Label";
+import Button from "components/UI/Button";
+
 import Container from "components/Container";
-import Card from "components/Card";
-import Label from "components/Label";
-import Button from "components/Button";
 import Footer from "components/Footer";
 
 import listDealers from "data/dealer.json";

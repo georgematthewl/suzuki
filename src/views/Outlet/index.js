@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
 import { useHistory } from "react-router-dom";
 
+import Divider from "components/UI/Divider";
+import Button from "components/UI/Button";
+import Carousell from "components/UI/Carousell";
+import Tab from "components/UI/Tab";
+
 import Container from "components/Container";
-import Divider from "components/Divider";
-import Button from "components/Button";
 import Footer from "components/Footer";
-import Carousell from "components/Carousell";
-import Tab from "components/Tab";
 import FloatingItem from "components/FloatingItem";
 
 import listPassengerCar from "data/products/passenger.json";

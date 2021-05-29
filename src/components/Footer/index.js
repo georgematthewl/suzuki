@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Divider from "components/Divider";
-import Button from "components/Button";
+import Divider from "components/UI/Divider";
+import Button from "components/UI/Button";
 
 import "./Footer.scss";
 
