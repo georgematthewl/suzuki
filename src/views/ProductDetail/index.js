@@ -319,7 +319,7 @@ const ProductDetail = () => {
       </Helmet>
       <div className="sticky-nav bg-primary--lightest">
         <section className="pt--0-5 pl--1 pr--1">
-          <h5>XL 7</h5>
+          <h5>XL7</h5>
         </section>
         {renderNavTab()}
       </div>
