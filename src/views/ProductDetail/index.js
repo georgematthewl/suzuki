@@ -137,6 +137,7 @@ const ProductDetail = () => {
             <Link
               to="overview"
               smooth
+              offset={-126}
               onClick={() => setActiveTab("overview")}
               className="text-size--12 pt--0-5 pb--0-5 pl--1 pr--1 text-bold"
             >
@@ -147,6 +148,7 @@ const ProductDetail = () => {
             <Link
               to="type"
               smooth
+              offset={-126}
               onClick={() => setActiveTab("type")}
               className="text-size--12 pt--0-5 pb--0-5 pl--1 pr--1 text-bold"
             >
@@ -157,6 +159,7 @@ const ProductDetail = () => {
             <Link
               to="exterior"
               smooth
+              offset={-126}
               onClick={() => setActiveTab("exterior")}
               className="text-size--12 pt--0-5 pb--0-5 pl--1 pr--1 text-bold"
             >
@@ -167,6 +170,7 @@ const ProductDetail = () => {
             <Link
               to="interior"
               smooth
+              offset={-126}
               onClick={() => setActiveTab("interior")}
               className="text-size--12 pt--0-5 pb--0-5 pl--1 pr--1 text-bold"
             >
@@ -177,6 +181,7 @@ const ProductDetail = () => {
             <Link
               to="specification"
               smooth
+              offset={-126}
               onClick={() => setActiveTab("specification")}
               className="text-size--12 pt--0-5 pb--0-5 pl--1 pr--1 text-bold"
             >
@@ -187,6 +192,7 @@ const ProductDetail = () => {
             <Link
               to="price"
               smooth
+              offset={-126}
               onClick={() => setActiveTab("price")}
               className="text-size--12 pt--0-5 pb--0-5 pl--1 pr--1 text-bold"
             >
@@ -542,25 +548,21 @@ const ProductDetail = () => {
           >
             <div className="pt--1 pb--1">
               <div className="d--flex">
-                <div className="text-bold text-size--14 width--75">
-                  <p className="mb--0-5">Panjang Keseluruhan</p>
-                  <p className="mb--0-5">Lebar Keseluruhan</p>
-                  <p className="mb--0-5">Tinggi Keseluruhan</p>
-                  <p className="mb--0-5">Jarak Poros Roda</p>
-                  <p className="mb--0-5">Jarak Pijak Depan</p>
-                  <p className="mb--0-5">Jarak Pijak Belakang</p>
-                  <p className="mb--0-5">Jarak Terendah</p>
-                  <p className="mb--0-5">Radius Putar Minimum</p>
+                <div className="text-bold text-size--14 width--50">
+                  <p className="mb--0-5">Sistem Kemudi</p>
+                  <p className="mb--0-5">Suspensi Depan</p>
+                  <p className="mb--0-5">Suspensi Belakang</p>
+                  <p className="mb--0-5">Rem Depan</p>
+                  <p className="mb--0-5">Rem Belakang</p>
+                  <p className="mb--0-5">Ukuran Ban</p>
                 </div>
-                <div className="text-size--14 width--25">
-                  <p className="mb--0-5">4,450 mm</p>
-                  <p className="mb--0-5">1,775 mm</p>
-                  <p className="mb--0-5">1,710 mm</p>
-                  <p className="mb--0-5">2,740 mm</p>
-                  <p className="mb--0-5">1,515 mm</p>
-                  <p className="mb--0-5">1,530 mm</p>
-                  <p className="mb--0-5">5,1</p>
-                  <p className="mb--0-5">200 mm</p>
+                <div className="text-size--14 width--50">
+                  <p className="mb--0-5">Rack & Pinion</p>
+                  <p className="mb--0-5">McPherson Strut</p>
+                  <p className="mb--0-5">Drum, leading & trailing</p>
+                  <p className="mb--0-5">Ventilated Disc</p>
+                  <p className="mb--0-5">Torsion Beam</p>
+                  <p className="mb--0-5">195/60 R16</p>
                 </div>
               </div>
             </div>
@@ -575,25 +577,13 @@ const ProductDetail = () => {
           >
             <div className="pt--1 pb--1">
               <div className="d--flex">
-                <div className="text-bold text-size--14 width--75">
-                  <p className="mb--0-5">Panjang Keseluruhan</p>
-                  <p className="mb--0-5">Lebar Keseluruhan</p>
-                  <p className="mb--0-5">Tinggi Keseluruhan</p>
-                  <p className="mb--0-5">Jarak Poros Roda</p>
-                  <p className="mb--0-5">Jarak Pijak Depan</p>
-                  <p className="mb--0-5">Jarak Pijak Belakang</p>
-                  <p className="mb--0-5">Jarak Terendah</p>
-                  <p className="mb--0-5">Radius Putar Minimum</p>
+                <div className="text-bold text-size--14 width--50">
+                  <p className="mb--0-5">Tempat Duduk</p>
+                  <p className="mb--0-5">Tangki Bahan Bakar</p>
                 </div>
-                <div className="text-size--14 width--25">
-                  <p className="mb--0-5">4,450 mm</p>
-                  <p className="mb--0-5">1,775 mm</p>
-                  <p className="mb--0-5">1,710 mm</p>
-                  <p className="mb--0-5">2,740 mm</p>
-                  <p className="mb--0-5">1,515 mm</p>
-                  <p className="mb--0-5">1,530 mm</p>
-                  <p className="mb--0-5">5,1</p>
-                  <p className="mb--0-5">200 mm</p>
+                <div className="text-size--14 width--50">
+                  <p className="mb--0-5">7 Persons</p>
+                  <p className="mb--0-5"> 45 liters</p>
                 </div>
               </div>
             </div>
