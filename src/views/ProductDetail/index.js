@@ -439,6 +439,7 @@ const ProductDetail = () => {
               </div>
             </div>
           </Accordion>
+
           <Accordion
             attributes={{
               title: "MESIN",
@@ -449,25 +450,27 @@ const ProductDetail = () => {
           >
             <div className="pt--1 pb--1">
               <div className="d--flex">
-                <div className="text-bold text-size--14 width--75">
-                  <p className="mb--0-5">Panjang Keseluruhan</p>
-                  <p className="mb--0-5">Lebar Keseluruhan</p>
-                  <p className="mb--0-5">Tinggi Keseluruhan</p>
-                  <p className="mb--0-5">Jarak Poros Roda</p>
-                  <p className="mb--0-5">Jarak Pijak Depan</p>
-                  <p className="mb--0-5">Jarak Pijak Belakang</p>
-                  <p className="mb--0-5">Jarak Terendah</p>
-                  <p className="mb--0-5">Radius Putar Minimum</p>
+                <div className="text-bold text-size--14 width--50">
+                  <p className="mb--0-5">Jenis</p>
+                  <p className="mb--0-5">Isi Silinder</p>
+                  <p className="mb--0-5">Jumlah Katup</p>
+                  <p className="mb--0-5">Jumlah Silinder</p>
+                  <p className="mb--0-5">Diameter x Langkah</p>
+                  <p className="mb--0-5">Ratio Kompresi</p>
+                  <p className="mb--0-5">Daya Maksimum</p>
+                  <p className="mb--0-5">Momen Puntir Maks.</p>
+                  <p className="mb--0-5">Sistem Bahan Bakar</p>
                 </div>
-                <div className="text-size--14 width--25">
-                  <p className="mb--0-5">4,450 mm</p>
-                  <p className="mb--0-5">1,775 mm</p>
-                  <p className="mb--0-5">1,710 mm</p>
-                  <p className="mb--0-5">2,740 mm</p>
-                  <p className="mb--0-5">1,515 mm</p>
-                  <p className="mb--0-5">1,530 mm</p>
-                  <p className="mb--0-5">5,1</p>
-                  <p className="mb--0-5">200 mm</p>
+                <div className="text-size--14 width--50">
+                  <p className="mb--0-5">K15B</p>
+                  <p className="mb--0-5">4</p>
+                  <p className="mb--0-5">16</p>
+                  <p className="mb--0-5">1.462 cm3</p>
+                  <p className="mb--0-5">74,0 x 85,0 mm</p>
+                  <p className="mb--0-5">10,5</p>
+                  <p className="mb--0-5">77kW</p>
+                  <p className="mb--0-5">138 / 4.400Nm / rpm</p>
+                  <p className="mb--0-5">Multipoint Injection</p>
                 </div>
               </div>
             </div>
@@ -482,25 +485,13 @@ const ProductDetail = () => {
           >
             <div className="pt--1 pb--1">
               <div className="d--flex">
-                <div className="text-bold text-size--14 width--75">
-                  <p className="mb--0-5">Panjang Keseluruhan</p>
-                  <p className="mb--0-5">Lebar Keseluruhan</p>
-                  <p className="mb--0-5">Tinggi Keseluruhan</p>
-                  <p className="mb--0-5">Jarak Poros Roda</p>
-                  <p className="mb--0-5">Jarak Pijak Depan</p>
-                  <p className="mb--0-5">Jarak Pijak Belakang</p>
-                  <p className="mb--0-5">Jarak Terendah</p>
-                  <p className="mb--0-5">Radius Putar Minimum</p>
+                <div className="text-bold text-size--14 width--50">
+                  <p className="mb--0-5">Perbandingan Gigi Akhir</p>
+                  <p className="mb--0-5">Ratio Gear</p>
                 </div>
-                <div className="text-size--14 width--25">
-                  <p className="mb--0-5">4,450 mm</p>
-                  <p className="mb--0-5">1,775 mm</p>
-                  <p className="mb--0-5">1,710 mm</p>
-                  <p className="mb--0-5">2,740 mm</p>
-                  <p className="mb--0-5">1,515 mm</p>
-                  <p className="mb--0-5">1,530 mm</p>
-                  <p className="mb--0-5">5,1</p>
-                  <p className="mb--0-5">200 mm</p>
+                <div className="text-size--14 width--50">
+                  <p className="mb--0-5">3.545 / 2.875</p>
+                  <p className="mb--0-5">2.875 (AT)</p>
                 </div>
               </div>
             </div>
@@ -515,25 +506,13 @@ const ProductDetail = () => {
           >
             <div className="pt--1 pb--1">
               <div className="d--flex">
-                <div className="text-bold text-size--14 width--75">
-                  <p className="mb--0-5">Panjang Keseluruhan</p>
-                  <p className="mb--0-5">Lebar Keseluruhan</p>
-                  <p className="mb--0-5">Tinggi Keseluruhan</p>
-                  <p className="mb--0-5">Jarak Poros Roda</p>
-                  <p className="mb--0-5">Jarak Pijak Depan</p>
-                  <p className="mb--0-5">Jarak Pijak Belakang</p>
-                  <p className="mb--0-5">Jarak Terendah</p>
-                  <p className="mb--0-5">Radius Putar Minimum</p>
+                <div className="text-bold text-size--14 width--30">
+                  <p className="mb--0-5">Berat Kosong</p>
+                  <p className="mb--0-5">Berat Kotor</p>
                 </div>
-                <div className="text-size--14 width--25">
-                  <p className="mb--0-5">4,450 mm</p>
-                  <p className="mb--0-5">1,775 mm</p>
-                  <p className="mb--0-5">1,710 mm</p>
-                  <p className="mb--0-5">2,740 mm</p>
-                  <p className="mb--0-5">1,515 mm</p>
-                  <p className="mb--0-5">1,530 mm</p>
-                  <p className="mb--0-5">5,1</p>
-                  <p className="mb--0-5">200 mm</p>
+                <div className="text-size--14 width--70">
+                  <p className="mb--0-5">1.145 kg (5 MT), 1.165 kg (6 AT)</p>
+                  <p className="mb--0-5">1.670 kg</p>
                 </div>
               </div>
             </div>
