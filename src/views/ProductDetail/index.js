@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-scroll";
 
 import TextField from "@material-ui/core/TextField";
@@ -313,6 +314,9 @@ const ProductDetail = () => {
 
   return (
     <Container>
+      <Helmet>
+        <title>Detail Produk XL7</title>
+      </Helmet>
       <div className="sticky-nav bg-primary--lightest">
         <section className="pt--0-5 pl--1 pr--1">
           <h5>XL 7</h5>

@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Helmet } from "react-helmet";
 import { useHistory } from "react-router-dom";
 
 import Divider from "components/UI/Divider";
@@ -125,6 +126,9 @@ const Outlet = () => {
 
   return (
     <Container>
+      <Helmet>
+        <title>Suzuki NJS Buah Batu Outlet</title>
+      </Helmet>
       <section>
         <Carousell images={images} />
       </section>
