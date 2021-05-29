@@ -30,6 +30,7 @@
   max-height: 0;
   overflow: hidden;
   transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s;
+  border-radius: 4px;
 }
 
 .v_accordion--open {
