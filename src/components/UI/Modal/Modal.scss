@@ -7,10 +7,12 @@
   padding: 16px;
   left: 50%;
   transform: translate(-50%, -100vh);
-  top: 30%;
+  top: 20%;
   transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 250ms;
+  visibility: hidden;
 
   &.show {
     transform: translate(-50%, 0);
+    visibility: visible;
   }
 }
