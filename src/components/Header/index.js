@@ -1,12 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 
 import Logo from "assets/logo.png";
 import "./Header.scss";
 
 const Header = ({ isMenuOpen }) => {
   const { pathname } = useLocation();
+  const history = useHistory();
   const [isNoShadow, setIsNoShadow] = useState(true);
 
   useEffect(() => {
@@ -21,8 +22,14 @@ const Header = ({ isMenuOpen }) => {
     }
   }
 
+  function pushTo() {
+    if (isNoShadow) history.push("/outlet");
+    else history.push("/");
+  }
+
   return (
     <header
+      onClick={pushTo}
       className={`header d--flex a-items--center ${isMenuOpen ? "hide" : ""} ${
         isNoShadow ? "no-box-shadow" : ""
       }`}
