@@ -562,7 +562,7 @@ const ProductDetail = () => {
                 </div>
                 <div className="text-size--14 width--50">
                   <p className="mb--0-5">7 Persons</p>
-                  <p className="mb--0-5"> 45 liters</p>
+                  <p className="mb--0-5">45 liters</p>
                 </div>
               </div>
             </div>
