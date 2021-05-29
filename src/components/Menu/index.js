@@ -88,7 +88,7 @@ const Menu = ({ handleMenu }) => {
           <p className="mt--0">All rights reserved.</p>
         </footer>
       </div>
-      <Backdrop isHide={!isOpen} />
+      <Backdrop isHide={!isOpen} onClick={closeMenu} />
     </div>
   );
 };
